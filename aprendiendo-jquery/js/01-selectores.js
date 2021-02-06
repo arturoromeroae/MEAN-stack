@@ -23,4 +23,25 @@ $(document).ready(function() {
 
     // selectores de etiqueta
     
+    var parrafos = $('p').css('cursor', 'pointer');
+
+    $('p').mouseover(function () {
+        var esto = $(this);
+        esto.addClass('over');
+    });
+
+    $('p').mouseout(function () { 
+        var esto = $(this);
+        esto.removeClass('over');
+    });
+
+    parrafos.click(function() {
+        var esto = $(this);
+        if (!esto.hasClass('grande')){
+            esto.addClass('grande');   
+        }else{
+            esto.removeClass('grande');
+        }
+    });
+
 });
