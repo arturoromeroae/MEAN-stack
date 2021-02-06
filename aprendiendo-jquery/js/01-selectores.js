@@ -44,4 +44,14 @@ $(document).ready(function() {
         }
     });
 
+    // selectores de atributos
+    $('[title = "google"]').css('background', '#ccc');
+    $('[title = "facebook"]').css('background', 'blue');
+
+    // otros
+    // $('p, a').addClass('margen-sup');
+
+    var busqueda = $("#caja").find('.resaltado');
+    console.log(busqueda);
+
 });

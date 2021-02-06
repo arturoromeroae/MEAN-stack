@@ -17,15 +17,39 @@
             font-size: 30px;
         }
         .over{
-            background-color: cadetblue;
+            
+            background-color: rgb(175, 169, 255) !important;
+        }
+        .margen-sup{
+            display: block;
+            margin-top: 45px ;
+        }
+        .resaltado{
+            border-bottom: 2px solid brown;
         }
     </style>
 </head>
 <body>
     <h1>Aprendiendo jQuery</h1>
-    <p id="amarillo" class="zebra over">Ejercicios de jQuery</p>
-    <p id="rojo" class="sin_borde over">practicando con selectores</p>
-    <p id="azul" class="sin_borde over">quiero ser un parrafo azul</p>
+
+    <ul>
+        <li><a href="https://google.com" title="google">Ir a Google</a></li>
+        <li><a href="https://facebook.com" title="facebook">Ir a Facebook</a></li>
+    </ul>
+
+    <p id="amarillo" class="zebra">Ejercicios de jQuery</p>
+    <p id="rojo" class="sin_borde">practicando con selectores</p>
+    <p id="azul" class="sin_borde">quiero ser un parrafo azul</p>
     <p class="zebra">soy un parrafo blanco</p>
+
+    <div id="caja">
+        <p>Hola soy una caja</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li class="resaltado">Elemento 2</li>
+        </ul>
+        <span class="resaltado">soy un span</span>
+    </div>
+
 </body>
 </html>
