@@ -9,11 +9,17 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
     crossorigin="anonymous"></script>
     <script src="js/01-selectores.js"></script>
+    <style>
+        .zebra{
+            border: 5px dashed black;
+        }
+    </style>
 </head>
 <body>
     <h1>Aprendiendo jQuery</h1>
-    <p id="amarillo">Ejercicios de jQuery</p>
-    <p id="rojo">practicando con selectores</p>
-    <p id="azul">quiero ser un parrafo azul</p>
+    <p id="amarillo" class="zebra">Ejercicios de jQuery</p>
+    <p id="rojo" class="sin_borde">practicando con selectores</p>
+    <p id="azul" class="sin_borde">quiero ser un parrafo azul</p>
+    <p class="zebra">soy un parrafo blanco</p>
 </body>
 </html>
