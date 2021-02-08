@@ -10,8 +10,26 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
     crossorigin="anonymous"></script>
     <script src="js/05-ajax.js"></script>
+    <style>
+        #datos{
+            border: 2px solid green;
+            width: 250px;
+            height: 250px;
+            overflow: scroll;
+        }
+    </style>
 </head>
 <body>
     <h1>Aprendiendo jQuery - AJAX</h1>
+
+    <form action="https://reqres.in/api/users" method="POST" id="formulario">
+        Nombre: <input type="text" name="name">
+        Trabajo: <input type="text" name="job">
+        <input type="submit" value="Registrar">
+    </form>
+
+    <br><hr><br>
+
+    <div id="datos"></div>
 </body>
 </html>
