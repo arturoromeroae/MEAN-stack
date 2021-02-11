@@ -8,6 +8,17 @@
     
     <!-- CSS styles -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- my scripts -->
+    <script src="js/main.js"></script>
+    
 </head>
 <body>
     <!-- cabecera -->
@@ -30,7 +41,11 @@
 
         <!-- slider -->
         <div id="slider">
-
+            <div class="bxslider">
+                <div><img src="images/landscape-5338046_1920.jpg" title="Funky roots"></div>
+                <div><img src="images/trees-4741364_1920.png" title="The long and winding road"></div>
+                <div><img src="images/forest-5903010_1920.jpg" title="Happy trees"></div>
+            </div>
         </div>
 
         <!-- contenido -->
@@ -52,16 +67,39 @@
                     <a href="#" class="button-more">Leer más</a>
                 </article>
             </div>
-            <sidebar id="sidebar">
 
-            </sidebar>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4>Quien soy?</h4>
+                    <img src="images/033-skill.svg" alt="girl with balls around">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iste 
+                        incidunt recusandae quod mollitia, laborum a sapiente quae aperiam iusto, 
+                        vel alias in! Impedit omnis dolorum ad commodi quidem alias!
+                    </p>
+                </div>
+
+                <div id="login">
+                    <h4>Identificate</h4>
+                    <form>
+                        <label for="name">Nombre</label><br>
+                        <input type="text" name="name" id=""><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id=""><br>
+                        <label for="password">Contraseña</label><br>
+                        <input type="password" name="password" id=""><br>
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+
+            </aside>
 
             <div class="clearfix"></div>
         </section>
 
     </section>
     <footer>
-        Curso JavaScript
+        Curso JavaScript &copy;
     </footer>
 </body>
 </html>
