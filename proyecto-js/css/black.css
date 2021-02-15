@@ -1,0 +1,54 @@
+body{
+    background: darkcyan;
+}
+
+#global{
+    background: midnightblue;
+}
+
+#menu{
+    background: #333;
+}
+
+.item-menu:hover{
+    background: darkcyan;
+}
+
+#menu a{
+    color: white;
+}
+
+.column h2{
+    color: rgb(255, 255, 255);
+}
+
+.column .date{
+    color: gray;
+}
+
+.button-more{
+    background-color: darkcyan;
+    color: white;
+}
+
+#sidebar h4{
+    color: rgb(255, 255, 255);
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px gray;
+}
+
+form input[type="submit"]{
+    background: darkcyan;
+    border: 2px solid darkcyan;
+    color: white;
+}
+
+footer{
+    color: white;
+    background: #333;
+}

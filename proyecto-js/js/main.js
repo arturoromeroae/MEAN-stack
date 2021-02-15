@@ -46,4 +46,37 @@ $(document).ready(function () {
 
         $('#posts').append(post);
     });
+
+    // selector de tema
+    var theme = $("#theme");
+    var buttons = $("#button-switch");
+    var black = 'css/black.css';
+    var white = 'css/white.css';
+    
+    if (typeof(Storage) !== "undefined") {
+        localStorage.setItem("tema1", black);
+        localStorage.setItem("tema2", white);
+        var tema1 = localStorage.getItem("tema1");
+        var tema2 = localStorage.getItem("tema2");
+
+        buttons.click(function () { 
+            if (this.checked) {
+                theme.attr("href", tema1);
+                localStorage.setItem("bc", true);
+                localStorage.removeItem('bu');
+            }else{
+                theme.attr("href", tema2);
+                localStorage.setItem("bu", false);
+                localStorage.removeItem('bc');
+            }
+        });
+
+        if (localStorage.getItem("bc")) {
+            theme.attr("href", tema1);
+            buttons.prop('checked', true);
+        }else{
+            theme.attr("href", tema2);
+        }
+    }
+    
 });
