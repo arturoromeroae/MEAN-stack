@@ -232,3 +232,13 @@ input:checked + .slider:before {
 .slider.round:after {
     border-radius: 50%;
 }
+
+.upper{
+    display: none;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0px;
+    right: 40px;
+}

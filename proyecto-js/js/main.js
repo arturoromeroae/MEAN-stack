@@ -77,6 +77,25 @@ $(document).ready(function () {
         }else{
             theme.attr("href", tema2);
         }
-    }
+    };
+    
+    // scroll arriba de la web
+    $('.upper').click(function (e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: 0
+        }, 450);
+
+        return false;
+    });
+
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 0) {
+           $('.upper').slideDown(300);
+       }else{
+           $('.upper').slideUp(300);
+       }
+    });
     
 });

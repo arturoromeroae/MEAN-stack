@@ -52,3 +52,8 @@ footer{
     color: white;
     background: rgba(51, 51, 51, 0.70);
 }
+
+.upper{
+    background: thistle;
+    color: rgb(255, 255, 255);
+}

@@ -52,3 +52,8 @@ footer{
     color: white;
     background: #333;
 }
+
+.upper{
+    background: darkcyan;
+    color: rgb(255, 255, 255);
+}
