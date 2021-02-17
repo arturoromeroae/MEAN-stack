@@ -53,6 +53,7 @@ $(document).ready(function () {
     var black = 'css/black.css';
     var white = 'css/white.css';
     
+    // guardar tema del usuarion en localstorage
     if (typeof(Storage) !== "undefined") {
         localStorage.setItem("tema1", black);
         localStorage.setItem("tema2", white);
@@ -98,4 +99,26 @@ $(document).ready(function () {
        }
     });
     
+    // formulario login
+    $('#login form').submit(function () {
+        var form_name = $('#form_name').val();
+
+        localStorage.setItem('form_name', form_name);
+    });
+
+    var form_name = localStorage.getItem('form_name');
+    if (form_name != null && form_name != 'undefined') {
+        var about_parrafo = $("#about p");
+
+        about_parrafo.html('<strong style="text-align: center;">Bienvenido, ' + form_name + '</strong>');
+        about_parrafo.append("<a href='#' id='logout'>Cerrar sesion</a>");
+
+        $('#login form').hide();
+
+        $('#logout').click(function () {
+            localStorage.removeItem('form_name');
+            location.reload();
+        });
+    }
+
 });
