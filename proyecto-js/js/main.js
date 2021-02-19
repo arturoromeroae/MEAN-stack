@@ -126,8 +126,26 @@ $(document).ready(function () {
         });
     }
 
+    // acordeon
     if (window.location.href.indexOf('about') > -1) {
         $('#acordeon').accordion();
+    }
+
+    // reloj
+    if (window.location.href.indexOf('reloj') > -1) {
+        setInterval(() => {
+            var reloj =moment().format('MMMM Do YYYY, h:mm:ss a');
+            $('#reloj').html(reloj);
+        }, 1000);
+    }
+
+    // validacion
+    if (window.location.href.indexOf('contact') > -1) {
+        $.validate({
+            lang: 'es',
+            errorMessagePosition: 'top',
+            scrollToTopOnError: true
+        });
     }
 
 });

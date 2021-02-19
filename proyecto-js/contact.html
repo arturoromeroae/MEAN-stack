@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css">
     <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
 
+    <!-- Plugin validacion -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
     <!-- my scripts -->
     <script src="js/main.js"></script>
     
@@ -50,36 +53,32 @@
         <!-- contenido -->
         <section id="cotent">
             <div id="box">
-                <!-- cargar acordeon -->
-                <h2>Sobre mi</h2>
-                <div id="acordeon">
-                    <h3>Quienes somos?</h3>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vel atque 
-                            commodi maxime quam impedit tempore laboriosam ex. Cum, adipisci itaque? 
-                            Id aspernatur tenetur doloribus cumque magnam reprehenderit neque saepe!
-                        </p>
-                    </div>
+                <!-- cargar formulario -->
+                <h2>Contacto</h2>
+                <form action="" method="POST" id="form_contact">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="" data-validation="alphanumeric">
 
-                    <h3>Nuestros servicios</h3>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vel atque 
-                            commodi maxime quam impedit tempore laboriosam ex. Cum, adipisci itaque? 
-                            Id aspernatur tenetur doloribus cumque magnam reprehenderit neque saepe!
-                        </p>
-                    </div>
+                    <label for="surname">Apellidos</label>
+                    <input type="text" name="surname" id="" data-validation="alphanumeric">
 
-                    <h3>Nuestros clientes</h3>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vel atque 
-                            commodi maxime quam impedit tempore laboriosam ex. Cum, adipisci itaque? 
-                            Id aspernatur tenetur doloribus cumque magnam reprehenderit neque saepe!
-                        </p>
-                    </div>
-                </div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="">
+
+                    <label for="sex">Sexo</label>
+                    <select name="sex" id="" data-validation="required">
+                        <option value="man">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+
+                    <label for="date">Fecha de Nacimiento</label>
+                    <input type="date" name="date" id="" data-validation="date">
+
+                    <label for="age">Edad</label>
+                    <input type="number" name="age" id="" data-validation="number">
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
             </div>
 
             <aside id="sidebar">
