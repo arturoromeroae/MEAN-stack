@@ -18,3 +18,18 @@ atributos/metadatos de las clases  y componentes.
 los metadatos van a describir a las clases pero tambien describen relaciones, por ejemplo si tenemos
 un componente y una plantilla en el metadato se va a encargar de decirle a angular que ese componente
 y esa plantilla van juntos, entre muchas otras cosas.
+
+***servicios: son clases con un objetivo claro, facilita la reutilizacion, son un tipo de elementos
+dentro de la arquitectura de angular y mediante la inyeccion de dependencias los podemos usar en otros
+componentes principales.
+
+***providers: son servicios que nos proveen de datos o funcionalidades mediante sus metodos. Existen
+providers/servicios propios de angular o creados por nosotros mismos.
+
+***directivas: son funcionalidades aplicables al DOM y a los elementos html en las plantillas de un
+componente. Por ejemplo una directiva puede servir para controlar que un div se muestre o no o recorrer
+un array en la vista (directivas estructurales, estructuras condicionales y de control) o incluso tambien
+puede servir para darle un estilo u otro a un elemento html o tambien para interactuar con el modelo de
+datos del componente
+
+basicamente son nuevos atributos para aplicarle a cualquie cosa en nuestra plantilla/vista
