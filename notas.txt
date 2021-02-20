@@ -1,0 +1,20 @@
+***componente: controla un trozo de pantalla o de la vista
+
+todo lo que se ve en pantalla es controlado y gestionado por este tipo de elementos
+
+la logica de un componente dentro de una clase en angular es que da soporte a una vista
+interactuando con ella a traves de un API con propiedades y metodos.
+
+el componente hace de mediador entre la vista a traves de la plantilla y la logica de la app
+donde se incluira el modelo de datos es decir una especie de controlador
+
+***platilla: definen la vista de los componentes.
+
+son html y tienen sintaxis especial de angular. Trabajando con el databinding y las directivas.
+
+***decoradores y metadatos: con los decoradores (patron de diseño) vamos a configurar dinamicamente
+atributos/metadatos de las clases  y componentes.
+
+los metadatos van a describir a las clases pero tambien describen relaciones, por ejemplo si tenemos
+un componente y una plantilla en el metadato se va a encargar de decirle a angular que ese componente
+y esa plantilla van juntos, entre muchas otras cosas.
