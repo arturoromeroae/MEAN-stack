@@ -6,12 +6,20 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<h1>Bienvenido a la {{ title }}</h1>
+<p>{{ descripcion }}</p>
 
-  <button (click)='ocultarVideojuegos(false)' *ngIf="mostrar_videojuegos">Ocultar Videojuegos</button>
-  <button (click)='ocultarVideojuegos(true)' *ngIf="!mostrar_videojuegos">Mostrar Videojuegos</button>
-  <videojuego *ngIf="mostrar_videojuegos"></videojuego>
-  <zapatillas></zapatillas>
-  <cursos></cursos>
+<nav>
+  <a [routerLink]="['/home']" [routerLinkActive] = "['active']">Home</a> &nbsp;
+  <a [routerLink]="['/zapatillas']" [routerLinkActive] = "['active']">Zapatillas</a> &nbsp;
+  <a [routerLink]="['/cursos']" [routerLinkActive] = "['active']">Cursos</a> &nbsp;
+  <a [routerLink]="['/videojuegos']" [routerLinkActive] = "['active']">Videojuegos</a> &nbsp;
+</nav>
+<!-- <videojuego *ngIf="mostrar_videojuegos"></videojuego> -->
+<!-- <zapatillas></zapatillas>
+<cursos></cursos> -->
+<router-outlet></router-outlet>
+<hr>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
