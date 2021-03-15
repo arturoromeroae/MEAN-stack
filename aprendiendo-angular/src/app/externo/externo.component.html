@@ -1,1 +1,15 @@
-<p>externo works!</p>
+{{ fecha | date:'dd/MMMM/yyyy' | uppercase }}
+{{ 'HOLA ESTA EN MAYUS' | lowercase }}
+<hr>
+{{ 5 | calculadora: 2 }}
+<hr>
+<input type="text" [(ngModel)]="userId" (keyup.enter)="cargaUsuario()">
+
+<div *ngIf="!user">
+    Cargando...
+</div>
+
+<div *ngIf="user">
+    <img src="{{ user.avatar }}" alt="mujer sonriendo" width="200px">
+    <h2>{{ user.first_name + ' ' + user.last_name}}</h2>
+</div>
