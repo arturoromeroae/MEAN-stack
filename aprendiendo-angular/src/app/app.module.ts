@@ -9,6 +9,7 @@ import { VideojuegoComponent } from "./videojuego/videojuego.component";
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { HomeComponent } from './home/home.component';
+import { ExternoComponent } from './externo/externo.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HomeComponent } from './home/home.component';
     ZapatillasComponent,
     CursosComponent,
     HomeComponent,
+    ExternoComponent,
   ],
   imports: [
     BrowserModule,
